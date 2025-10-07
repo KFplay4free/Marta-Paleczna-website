@@ -3456,6 +3456,12 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
+	#header img {
+	  height: 100%;              /* fills header height */
+	  width: auto;               /* keeps proportions */
+	  object-fit: contain;       /* ensures no distortion */
+	}
+
 		#header h1 {
 			-moz-transition: opacity 0.2s ease;
 			-webkit-transition: opacity 0.2s ease;
@@ -3998,3 +4004,4 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
