@@ -4005,6 +4005,22 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 
+.transition1 {
+  height: 120px; /* adjust as you like */
+  background: linear-gradient(to bottom, transparent, #003E31);
+}
+
+.transition2 {
+  height: 120px; /* adjust as you like */
+  background: linear-gradient(to bottom, #003E31,#735201);
+}
+
+.transition3 {
+  height: 120px; /* adjust as you like */
+  background: linear-gradient(to bottom, #735201, transparent);
+}
+
+
 
 
 
