@@ -2981,7 +2981,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #EAAF03;
 			color: #d3d4e4;
 		}
 
@@ -4004,6 +4004,12 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+
+#two.inner {
+  text-align: right;
+}
+
 
 
 
