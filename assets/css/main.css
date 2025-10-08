@@ -2994,7 +2994,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style3 hr {
-				border-color: rgba(0, 0, 0, 0.125);
+				border-color: #ffffff;
 			}
 
 			.wrapper.style3 blockquote {
@@ -3014,7 +3014,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style3 header.major p {
-				color: #d3d4e4;
+				color: #ffffff;
 			}
 
 			.wrapper.style3 label {
@@ -4004,6 +4004,7 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
 
 
 
