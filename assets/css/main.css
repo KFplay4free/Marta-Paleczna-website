@@ -1950,7 +1950,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #2e3842;
+			background: #003E31;
 			color: #fff;
 			content: '\f00c';
 		}
@@ -3197,7 +3197,7 @@ input, select, textarea {
 			}
 
 				.wrapper.style5 select option {
-					color: #2E3842;
+					color: #003E31;
 					background: #ffffff;
 				}
 
@@ -3213,7 +3213,7 @@ input, select, textarea {
 
 			.wrapper.style5 input[type="checkbox"]:checked + label:before,
 			.wrapper.style5 input[type="radio"]:checked + label:before {
-				background: #2E3842;
+				background: #003E31;
 				color: #ffffff;
 			}
 
@@ -4004,6 +4004,7 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
 
 
 
