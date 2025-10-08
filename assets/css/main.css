@@ -3144,7 +3144,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style5 {
-			background-color: #ffffff;
+			background-color: #003E31;
 			color: #4E4852;
 		}
 
@@ -4004,5 +4004,6 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
 
 
