@@ -3983,7 +3983,7 @@ input, select, textarea {
 	}
 
 	body.landing #footer {
-		background-color: rgba(29, 36, 42, 0.9);
+		background-color:  #003E31;
 	}
 
 	body.is-mobile.landing #page-wrapper {
@@ -4019,6 +4019,7 @@ input, select, textarea {
   height: 120px; /* adjust as you like */
   background: linear-gradient(to bottom, #735201, transparent);
 }
+
 
 
 
