@@ -4005,6 +4005,10 @@ input, select, textarea {
 		background-color: #1d242a;
 	}
 .transition1 {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
 		height: 120px;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
@@ -4025,6 +4029,7 @@ input, select, textarea {
   height: 120px; /* adjust as you like */
   background: linear-gradient(to bottom, #735201, transparent);
 }
+
 
 
 
