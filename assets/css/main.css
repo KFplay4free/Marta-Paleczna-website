@@ -4004,35 +4004,51 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
 .transition1 {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		height: 120px;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		pointer-events: none;
-			-moz-transition: opacity 2s ease-in-out;
-			-webkit-transition: opacity 2s ease-in-out;
-			-ms-transition: opacity 2s ease-in-out;
-			transition: opacity 2s ease-in-out;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
-			content: '';
-			background: #2e3842;
-			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			opacity: 0;
+	position: relative;
+	height: 120px; /* adjust as needed */
+	overflow: hidden;
+	background: #2e3842; /* fallback */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
 }
+
+/* pseudo-element that mirrors #banner:after */
+.transition1::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2e3842; /* same base as banner:after */
+	transition: opacity 2s ease-in-out;
+	transition-delay: 1.25s;
+	opacity: 0; /* matches banner’s final state */
+	z-index: 0;
+}
+
+/* initial preload state — before fade-in */
+body.is-preload .transition1::after {
+	opacity: 1;
+}
+
+/* dynamic background, synced with banner */
+.transition1 {
+	background-image: linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("../../images/banner.jpg"); /* same image as banner */
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .transition4 {
   height: 120px; /* adjust as you like */
   background: linear-gradient(to bottom, transparent,#003E31);
@@ -4047,6 +4063,7 @@ input, select, textarea {
   height: 120px; /* adjust as you like */
   background: linear-gradient(to bottom, #735201, transparent);
 }
+
 
 
 
