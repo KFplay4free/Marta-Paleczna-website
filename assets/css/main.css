@@ -4007,17 +4007,35 @@ input, select, textarea {
 
 .transition1 {
 	position: relative;
-	height: 120px; /* adjust as needed */
+	height: 120px; /* adjust height */
 	overflow: hidden;
-	background: #2e3842; /* fallback */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	color: white;
+
+	/* The dynamic background copied from banner */
+	background-image: url("../../images/banner.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
-/* pseudo-element that mirrors #banner:after */
+/* overlay gradient: from transparent (top) → #003E31 (bottom) */
+.transition1::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #003E31 100%);
+	z-index: 1;
+	pointer-events: none;
+}
+
+/* optional: same fade animation timing as banner’s overlay */
 .transition1::after {
 	content: '';
 	position: absolute;
@@ -4025,29 +4043,23 @@ input, select, textarea {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #2e3842; /* same base as banner:after */
+	background: #2e3842;
+	opacity: 0;
 	transition: opacity 2s ease-in-out;
 	transition-delay: 1.25s;
-	opacity: 0; /* matches banner’s final state */
 	z-index: 0;
 }
 
-/* initial preload state — before fade-in */
 body.is-preload .transition1::after {
 	opacity: 1;
 }
 
-/* dynamic background, synced with banner */
-.transition1 {
-	background-image: linear-gradient(
-			rgba(0, 0, 0, 0.5),
-			rgba(0, 0, 0, 0.5)
-		),
-		url("../../images/banner.jpg"); /* same image as banner */
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
+/* content stays above overlays */
+.transition1 * {
+	position: relative;
+	z-index: 2;
 }
+
 
 .transition4 {
   height: 120px; /* adjust as you like */
@@ -4063,6 +4075,7 @@ body.is-preload .transition1::after {
   height: 120px; /* adjust as you like */
   background: linear-gradient(to bottom, #735201, transparent);
 }
+
 
 
 
