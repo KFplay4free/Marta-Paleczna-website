@@ -4006,23 +4006,8 @@ input, select, textarea {
 	}
 
 .transition1 {
-  height: 8rem; /* adjust as you like (e.g., 6rem–12rem) */
-  position: relative;
-  background: linear-gradient(
-    to bottom,
-    rgba(46, 56, 66, 1) 0%,   /* match banner overlay color */
-    rgba(46, 56, 66, 0.7) 40%,
-    rgba(46, 56, 66, 0.3) 70%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transition: opacity 2s ease-in-out;
-  opacity: 1;
-  z-index: 1;
-}
-
-/* Optional: fade the transition in as the banner overlay fades out */
-body.is-preload .transition1 {
-  opacity: 0;
+  height: 120px; /* adjust as you like */
+  background: linear-gradient(to bottom, inherit,#003E31);
 }
 
 .transition2 {
@@ -4034,6 +4019,7 @@ body.is-preload .transition1 {
   height: 120px; /* adjust as you like */
   background: linear-gradient(to bottom, #735201, transparent);
 }
+
 
 
 
