@@ -4076,6 +4076,24 @@ body.is-preload .transition1::after {
   background: linear-gradient(to bottom, #735201, transparent);
 }
 
+.blur-box {
+  width: 300px;
+  height: 200px;
+  background: #EAAF03; /* Box color */
+  
+  /* Mask fade-out edges */
+  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
+  mask-image: radial-gradient(circle, black 70%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+
+  /* Optional: a soft shadow for blending */
+  box-shadow: 0 0 40px 20px #EAAF03;
+}
+
+
 
 
 
