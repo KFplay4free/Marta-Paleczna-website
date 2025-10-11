@@ -4077,19 +4077,16 @@ body.is-preload .transition1::after {
 }
 
 .blur-box {
-	position: relative;
+	position: center;
   width: 50%;
   height: 200px;
 padding: 2em 2em 2em 3em ;
   background: #003E31; /* Box color */
-
-  /* Optional: a soft shadow for blending */
-  box-shadow: 0 0 40px 20px #EAAF03;
 }
 
 .blur-box::before {
   content: "";
-  position: absolute;
+  position: center;
   inset: 0;
   background:
     linear-gradient(to right, transparent, #003E31 20%, #003E31 80%, transparent),
@@ -4097,6 +4094,7 @@ padding: 2em 2em 2em 3em ;
   mix-blend-mode: multiply;
   pointer-events: none;
 }
+
 
 
 
