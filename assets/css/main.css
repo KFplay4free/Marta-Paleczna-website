@@ -4077,6 +4077,8 @@ body.is-preload .transition1::after {
 }
 
 .blur-box {
+	  display: flex;
+  justify-content: center;
 	position: relative;
   width: 50%;
   height: 200px;
@@ -4086,6 +4088,7 @@ box-shadow: 0 0 40px 20px #EAAF03;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
+
 
 
 
