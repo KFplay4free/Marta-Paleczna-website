@@ -4083,7 +4083,10 @@ body.is-preload .transition1::after {
 padding: 2em 2em 2em 2em ;
   background: #003E31; /* Box color */
 box-shadow: 0 0 40px 20px #EAAF03;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
+
 
 
 
