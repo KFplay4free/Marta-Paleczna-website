@@ -4087,7 +4087,7 @@ box-shadow: 0 0 40px 20px #EAAF03;
 	margin: 100px auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .blur-box {
     width: 90%;
     height: auto; /* optional: let height adjust based on content */
@@ -4095,6 +4095,7 @@ box-shadow: 0 0 40px 20px #EAAF03;
     margin: 50px auto; /* optional: less margin for small screens */
   }
 }
+
 
 
 
